@@ -2,7 +2,7 @@ import { ArticleTeaser } from "@/components/drupal/ArticleTeaser"
 import { drupal } from "@/lib/drupal"
 import type { Metadata } from "next"
 import type { DrupalNode } from "next-drupal"
-import TargetCursor from "@/components/TargetCursor"
+import TargetCursor from "@/components/bits/TargetCursor"
 
 export const metadata: Metadata = {
   description: "A Next.js site powered by a Drupal backend.",

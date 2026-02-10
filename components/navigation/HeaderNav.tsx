@@ -29,7 +29,7 @@ export function HeaderNav() {
 
   const navigationItems = [
     { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
+    { path: '/about-us', label: 'About Us' },
     { path: '/projects', label: 'Projects' },
     { path: '/how-we-work', label: 'How We Work' },
     { path: '/contact', label: 'Contact' },
