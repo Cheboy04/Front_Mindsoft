@@ -3,6 +3,7 @@ import { drupal } from "@/lib/drupal"
 import type { Metadata } from "next"
 import type { DrupalNode } from "next-drupal"
 import TargetCursor from "@/components/bits/TargetCursor"
+import { HeroSection } from "@/components/home/HeroSection"
 
 export const metadata: Metadata = {
   description: "A Next.js site powered by a Drupal backend.",
@@ -32,6 +33,7 @@ export default async function Home() {
         parallaxOn
         hoverDuration={0.2}
     />
+    <HeroSection />
       <h1 className="mb-10 text-6xl font-black">Latest Articles.</h1>
       {nodes?.length ? (
         nodes.map((node) => (
