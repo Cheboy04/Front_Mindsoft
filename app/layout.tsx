@@ -25,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-[#1D1D1D] text-white min-h-screen">
         <DraftAlert />
         <div className="max-w-screen-md px-6 mx-auto">
           <HeaderNav />
