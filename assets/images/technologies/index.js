@@ -1,0 +1,9 @@
+export { default as AWS } from './AWS.png';
+export { default as Drupal } from './Drupal.svg';
+export { default as Figma } from './Figma.svg';
+export { default as Firebase } from './Firebase.png';
+export { default as Flutter } from './Flutter.png';
+export { default as Laravel } from './Laravel.png';
+export { default as React } from './React.png';
+export { default as SiteCore } from './Sitecore.png';
+export { default as Wordpress } from './Wordpress.png';
