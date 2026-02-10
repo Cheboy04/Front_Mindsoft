@@ -27,7 +27,9 @@ const config: Config = {
   			},
   			primary: {
   				DEFAULT: 'hsl(var(--primary))',
-  				foreground: 'hsl(var(--primary-foreground))'
+  				foreground: 'hsl(var(--primary-foreground))',
+				blue: '#50A0FF',
+				red: 'rgb(255, 68, 56)',
   			},
   			secondary: {
   				DEFAULT: 'hsl(var(--secondary))',
@@ -45,6 +47,9 @@ const config: Config = {
   				DEFAULT: 'hsl(var(--destructive))',
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
+			backdropBlur: {
+				'xl': '12px',
+			},
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
