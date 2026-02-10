@@ -27,9 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-[#1D1D1D] text-white min-h-screen">
         <DraftAlert />
-        <div className="max-w-screen-md px-6 mx-auto">
+        <div className="mx-auto">
           <HeaderNav />
-          <main className="container py-10 mx-auto">{children}</main>
+          <main className="mx-auto">{children}</main>
         </div>
       </body>
     </html>
