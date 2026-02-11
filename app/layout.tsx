@@ -1,5 +1,6 @@
 import { DraftAlert } from "@/components/misc/DraftAlert"
 import { HeaderNav } from "@/components/navigation/HeaderNav"
+import { Footer } from "@/components/common/Footer"
 import type { Metadata } from "next"
 import type { ReactNode } from "react"
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <div className="mx-auto">
           <HeaderNav />
           <main className="mx-auto">{children}</main>
+          <Footer />
         </div>
       </body>
     </html>
