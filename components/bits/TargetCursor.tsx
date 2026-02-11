@@ -1,4 +1,3 @@
-// src/components/effects/TargetCursor.tsx
 'use client';
 
 import { useEffect, useRef, useCallback, useMemo } from 'react';
