@@ -1,13 +1,11 @@
-// src/components/sections/HeroSection.tsx
 'use client';
 
-import GridMotionBackground from "@/components/bits/GridMotion";
+import { GridMotionBackground } from "@/components/bits/GridMotion";
 import { Users, ArrowRight, Briefcase } from 'lucide-react';
 import Link from 'next/link';
 import { useMemo } from 'react';
 
 export function HeroSection() {
-  // Datos estáticos (después puedes conectar con Drupal)
   const heroData = {
     titleA: 'Transformamos',
     titleAccent: 'ideas innovadoras',
@@ -21,7 +19,6 @@ export function HeroSection() {
     },
   };
 
-  // Items para el fondo animado
   const backgroundItems = useMemo(
     () => [
       'Item 1',
