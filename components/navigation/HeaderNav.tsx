@@ -7,11 +7,14 @@ import Link from 'next/link';
 import { GradientLink } from '../ui/GradientLink';
 import { NavLink } from '../ui/NavLink';
 import {LogoWithWordsWhite} from '../../assets/images';
+import { useCursorZone } from '@/components/hooks/useCursorZone';
+
 
 export function HeaderNav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const pathname = usePathname();
+  const navRef = useCursorZone('navbar');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -40,8 +43,9 @@ export function HeaderNav() {
   };
 
   return (
-    <>
+    <div ref={navRef as React.RefObject<HTMLDivElement>}>
       <nav
+        
         className={`
           fixed top-0 left-0 right-0
           z-50
@@ -237,6 +241,6 @@ export function HeaderNav() {
           </div>
         </>
       )}
-    </>
+      </div>
   );
 }

@@ -1,6 +1,7 @@
 import { DraftAlert } from "@/components/misc/DraftAlert"
 import { HeaderNav } from "@/components/navigation/HeaderNav"
 import { Footer } from "@/components/common/Footer"
+import { CursorProvider } from "@/components/bits/effects/CursorProvider"
 import type { Metadata } from "next"
 import type { ReactNode } from "react"
 
@@ -27,13 +28,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#1D1D1D] text-white min-h-screen">
-        
+        <CursorProvider>
+
         <DraftAlert />
         <div className="mx-auto">
           <HeaderNav />
           <main className="mx-auto">{children}</main>
           <Footer />
         </div>
+        </CursorProvider>
       </body>
     </html>
   )

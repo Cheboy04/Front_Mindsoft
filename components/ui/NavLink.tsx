@@ -24,7 +24,7 @@ export function NavLink({ href, children, className = '', scrolled = false }: Na
         text-2xl
         transition-all duration-300
         hover:text-blue-400
-        ${scrolled ? 'normal-cursor' : 'cursor-target'}
+        cursor-target
         ${isActive ? 'text-blue-400' : ''}
         ${className}
         

@@ -4,8 +4,11 @@ import { GridMotionBackground } from "@/components/bits/GridMotion";
 import { Users, ArrowRight, Briefcase } from 'lucide-react';
 import Link from 'next/link';
 import { useMemo } from 'react';
+import { useCursorZone } from '@/components/hooks/useCursorZone';
 
 export function HeroSection() {
+  const heroRef = useCursorZone('hero'); 
+
   const heroData = {
     titleA: 'Transformamos',
     titleAccent: 'ideas innovadoras',
@@ -50,6 +53,7 @@ export function HeroSection() {
 
   return (
     <section
+      ref={heroRef as React.RefObject<HTMLElement>}
       aria-label="Hero"
       className="relative min-h-screen w-full flex items-center overflow-hidden text-white/92"
     >
