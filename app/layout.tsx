@@ -27,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#1D1D1D] text-white min-h-screen">
+        
         <DraftAlert />
         <div className="mx-auto">
           <HeaderNav />

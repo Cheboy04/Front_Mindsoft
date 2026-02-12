@@ -2,10 +2,9 @@ import { ArticleTeaser } from "@/components/drupal/ArticleTeaser"
 import { drupal } from "@/lib/drupal"
 import type { Metadata } from "next"
 import type { DrupalNode } from "next-drupal"
-import { TargetCursor } from "@/components/bits/TargetCursor"
 import { HeroSection } from "@/components/home/HeroSection"
+import { TargetCursor } from "@/components/bits/TargetCursor"
 import { Suspense } from "react"
-
 export const metadata: Metadata = {
   description: "A Next.js site powered by a Drupal backend.",
 }
@@ -28,6 +27,7 @@ export default async function Home() {
 
   return (
     <>
+    <div className="max-h-250px max-w-250px">
     <Suspense fallback={null}>
     <TargetCursor 
         spinDuration={2}
@@ -35,8 +35,9 @@ export default async function Home() {
         parallaxOn
         hoverDuration={0.2}
     />
-    </Suspense>
+    </Suspense>              
     <HeroSection />
+    </div>
       <h1 className="mb-10 text-6xl font-black">Latest Articles.</h1>
       {nodes?.length ? (
         nodes.map((node) => (
