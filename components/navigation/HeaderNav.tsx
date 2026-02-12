@@ -62,7 +62,7 @@ export function HeaderNav() {
                 alt="MindSoft Logo"
                 width={200}
                 height={50}
-                className="h-[40px] sm:h-[50px] w-auto"
+                className="h-[40px] sm:h-[50px] max-w-max pr-4"
                 priority
               />
             </GradientLink>
@@ -133,12 +133,9 @@ export function HeaderNav() {
               md:hidden
               transform transition-transform duration-300
               ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}
-              
-              /* Background con gradientes radiales */
               bg-gradient-to-b from-[#0B1220] to-[#070B12]
               border-l border-white/10
               
-              /* Overlay de gradientes radiales */
               before:absolute
               before:inset-0
               before:bg-[radial-gradient(900px_480px_at_20%_0%,rgba(80,160,255,0.16)_0%,rgba(0,0,0,0)_55%)]
@@ -172,6 +169,7 @@ export function HeaderNav() {
                     text-white/95
                     transition-all
                     hover:bg-white/8
+                    cursor-target
                   "
                 >
                   <svg
@@ -208,6 +206,7 @@ export function HeaderNav() {
                         rounded-xl
                         transition-all duration-200
                         border
+                        cursor-target
                         ${isActive
                           ? 'text-blue-400 bg-blue-400/10 border-blue-400/22 font-bold'
                           : 'text-white/88 bg-transparent border-white/8 font-medium hover:bg-white/6 hover:border-white/14 hover:translate-x-1.5'

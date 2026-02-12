@@ -1,4 +1,3 @@
-// src/components/ui/NavLink.tsx
 'use client';
 
 import Link from 'next/link';
